@@ -11,38 +11,42 @@
     <body>
         <div id="calculator">
             <div id="display">
-                <div id="display-previous">ans=previous result</div>
-                <div id="display-current">current calculation</div>
+                <div id="display-previous">ans</div>
+                <div id="display-current">()</div>
             </div>
             <div id="buttons">
                 <div id="number-buttons">
                     <div class="button-row">
-                        <button id="op-?">...</button>
-                        <button id="digit-1">1</button>
-                        <button id="digit-2">2</button>
-                        <button id="digit-3">3</button>
-                        <button id="op-div">/</button>
+                        <button data-type="" data-value=""></button>
+                        <button data-type="input" data-value="1">1</button>
+                        <button data-type="input" data-value="2">2</button>
+                        <button data-type="input" data-value="3">3</button>
+                        <button data-type="input" data-value="÷">÷</button>
+                        <button data-type="" data-value=""></button>
                     </div>
                     <div class="button-row">
-                        <button id="op-??">...</button>
-                        <button id="digit-4">4</button>
-                        <button id="digit-5">5</button>
-                        <button id="digit-6">6</button>
-                        <button id="op-mul">*</button>
+                        <button data-type="" data-value=""></button>
+                        <button data-type="input" data-value="4">4</button>
+                        <button data-type="input" data-value="5">5</button>
+                        <button data-type="input" data-value="6">6</button>
+                        <button data-type="input" data-value="×">×</button>
+                        <button data-type="" data-value=""></button>
                     </div>
                     <div class="button-row">
-                        <button id="op-sqr">sqr</button>
-                        <button id="digit-7">7</button>
-                        <button id="digit-8">8</button>
-                        <button id="digit-9">9</button>
-                        <button id="op-minus">-</button>
+                        <button data-type="input" data-value="root">sqr</button>
+                        <button data-type="input" data-value="7">7</button>
+                        <button data-type="input" data-value="8">8</button>
+                        <button data-type="input" data-value="9">9</button>
+                        <button data-type="input" data-value="-">-</button>
+                        <button data-type="" data-value=""></button>
                     </div>
                     <div class="button-row">
-                        <button id="op-exp">exp</button>
-                        <button id="digit-0">0</button>
-                        <button id="op-dot">.</button>
-                        <button id="op-eq">=</button>
-                        <button id="op-add">+</button>
+                        <button data-type="input" data-value="power">pwr</button>
+                        <button data-type="input" data-value="0">0</button>
+                        <button data-type="input" data-value=".">.</button>
+                        <button data-type="eval">=</button>
+                        <button data-type="input" data-value="+">+</button>
+                        <button data-type="clear">AC</button>
                     </div>
                 </div>
             </div>
