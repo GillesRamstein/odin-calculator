@@ -12,8 +12,16 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    /* background-image: linear-gradient(45deg, rgba(125, 83, 240, 0.644), rgba(17, 160, 243, 0.705)); */
+    flex-direction: column;
     background-image: radial-gradient(rgba(125, 83, 240, 1), rgba(17, 160, 243, .6));
+    align-items: center;
+}
+
+#footer {
+    font-size: .8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 30rem;
 }
 
 #calculator {
@@ -27,7 +35,6 @@ body {
 #display {
     flex: 0 0 auto;
     background-color: beige;
-    /* border: 1px solid black; */
     padding: 0.5rem;
     margin-bottom: 0.15rem;
     display: flex;
@@ -63,7 +70,6 @@ body {
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
-    /* border: 1px solid black; */
     padding: 5px 30px;
     border-bottom-left-radius: .3rem;
     border-bottom-right-radius: .3rem;

@@ -79,6 +79,7 @@ buttonActions = {
     del,
     eval,
     clear,
+    notImplemented,
 };
 
 function input(value) {
@@ -110,12 +111,10 @@ function clear(_) {
     previousAnswer = "";
 }
 
-function stringEndsWithOperator(string) {
-    return OPERATORS.some((op) => string.endsWith(op));
-}
-
-function stringStartsWithOperator(string) {
-    return OPERATORS.some((op) => string.startsWith(op));
+function notImplemented() {
+    alert(
+        "The functionality for this button is not implemented yet =("
+    )
 }
 
 function closeOpenBrackets(string) {
