@@ -1,10 +1,11 @@
 :root {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 html {
     margin: 0;
     background-color: rgb(51, 45, 8);
+    font-family: sans-serif;
 }
 
 body {
@@ -12,33 +13,47 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #calculator {
+    width: 22rem;
     background-color: grey;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
+    padding: .2rem;
+    margin: auto;
+    border-radius: .5rem;
 }
 
 #display {
+    flex: 0 0 auto;
     background-color: beige;
     border: 1px solid black;
-    text-align: right;
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    flex: 1;
+    margin-bottom: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
 }
 
 #display-previous {
     font-size: 0.7rem;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-#display-current {
+#display-expression {
+    min-height: 1.5rem;
     font-size: 1.2rem;
+    margin: 0.3rem 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#display-answer {
+    font-size: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 #buttons {
@@ -47,7 +62,9 @@ body {
     justify-content: center;
     background-color: aquamarine;
     border: 1px solid black;
-    padding: 5px;
+    padding: 5px 30px;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
 }
 
 .button-row {
@@ -58,7 +75,8 @@ body {
 }
 
 button {
-    width: 36px;
-    height: 24px;
-    margin: 2px;
+    font-size: 0.9rem;
+    width: 3rem;
+    height: 2rem;
+    margin: .2rem .3rem;
 }
